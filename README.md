@@ -2,21 +2,13 @@
 
 A modern, subscription-based Web application where users record golf scores, enter monthly prize draws, and direct a share of their subscription payments directly to charitable causes. Built as part of the Digital Heroes Web Development Internship task.
 
-<p align="center">
-  <img src="image/img1.png" alt="Digital Heroes — Main Landing Page" width="100%" />
-</p>
-
-<p align="center">
-  <strong>Subscription Platform · Monthly Draw · Real Giving · Clean UI</strong>
-</p>
-
 ---
 
 ## Table of Contents
 - [Overview](#overview)
-- [Website Preview](#website-preview)
+- [Website Sections & Highlights](#website-sections--highlights)
 - [Features](#features)
-- [Website Sections](#website-sections)
+- [Website Sections Table](#website-sections-table)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
@@ -24,7 +16,6 @@ A modern, subscription-based Web application where users record golf scores, ent
 - [Responsive Design and Accessibility](#responsive-design-and-accessibility)
 - [AI Usage Disclosure](#ai-usage-disclosure)
 - [Acknowledgements](#acknowledgements)
-- [License](#license)
 
 ---
 
@@ -40,55 +31,31 @@ A modern, subscription-based Web application where users record golf scores, ent
 
 ---
 
-## Website Preview
+## Website Sections & Highlights
 
 ### 1. Landing Page / Hero Section
-The public landing page featuring the core brand message (*"Your scores, their future."*), explaining the model of turning recurring subscriptions into charity donations and draw entries.
-<p align="center">
-  <img src="image/img1.png" alt="Screenshot 1 — Landing Page" width="100%" />
-</p>
+The public-facing landing page introduces the project motto—*"Your scores, their future."* It clearly outlines how monthly subscription fees are split between prize draws and chosen charities, providing primary calls-to-action for joining and exploring supported causes.
 
 ### 2. User Dashboard
-The central dashboard displaying account status, active subscription renewals, recorded scores summary, total charity contributions, and draw eligibility notices.
-<p align="center">
-  <img src="image/img2.png" alt="Screenshot 2 — Dashboard Overview" width="100%" />
-</p>
+The core account dashboard displays personalized account activity, including subscription status (active/inactive renewal dates), total charity contributions recorded, submitted score counters, prize win totals, and immediate draw eligibility notices.
 
 ### 3. My Scores
-The score management interface allowing users to log new Stableford points (1–45) with date selection, alongside an editable list of the 5 most recent scores.
-<p align="center">
-  <img src="image/img3.png" alt="Screenshot 3 — My Scores Page" width="100%" />
-</p>
+The score tracking module allows users to enter new round details (Date played & Stableford points from 1–45). It displays a list of up to 5 of the user's most recent rounds with options to edit or delete existing entries.
 
 ### 4. My Charity
-Charity customization interface featuring a dropdown for selecting demo charities and an interactive slider to set the donation percentage (min 10%).
-<p align="center">
-  <img src="image/img4.png" alt="Screenshot 4 — Charity Selection" width="100%" />
-</p>
+The charity configuration page features a dropdown selector to choose a cause (e.g., Green Roots) and an interactive slider to set the share of each payment allocated to charity (minimum 10%). A selection history log keeps track of past charity allocations.
 
 ### 5. Contributions Ledger
-A transparent, table-based ledger displaying every confirmed payment, date, payment type, designated charity, total payment, allocated donation amount, and percentage share.
-<p align="center">
-  <img src="image/img5.png" alt="Screenshot 5 — Contributions Ledger" width="100%" />
-</p>
+A transparent, audit-ready financial ledger section that breaks down every confirmed payment. It categorizes amounts directed into charities versus the main prize pool, complete with transaction dates, payment types, and exact percentage shares.
 
 ### 6. Billing & Subscription Management
-Stripe-powered billing interface displaying monthly subscription details (price, next renewal date, status), options to manage payment methods, and invoice history.
-<p align="center">
-  <img src="image/img6.png" alt="Screenshot 6 — Billing Page" width="100%" />
-</p>
+Integrated directly with Stripe Billing, this section displays current active plans, monthly pricing details, renewal dates, and options to manage payment methods or cancel subscriptions, alongside recent transaction receipts.
 
 ### 7. User Profile
-Account settings page where users can view and update their display name, registered email address, and terms acceptance history.
-<p align="center">
-  <img src="image/img7.png" alt="Screenshot 7 — Profile Settings" width="100%" />
-</p>
+The account management section allows users to update their display name, inspect their registered primary email address, and view account terms acceptance timestamps.
 
 ### 8. Backend & Stripe Administration
-Backend integration preview displaying live customer subscriptions, collection methods, and transaction status within the Stripe Dashboard.
-<p align="center">
-  <img src="image/img8.png" alt="Screenshot 8 — Stripe Backend Integration" width="100%" />
-</p>
+Supported by a configured Stripe environment that tracks live active test subscriptions, customer details, tax calculations, and recurring billing cycles.
 
 ---
 
@@ -102,7 +69,7 @@ Backend integration preview displaying live customer subscriptions, collection m
 
 ---
 
-## Website Sections
+## Website Sections Table
 
 | Section | Description |
 | :--- | :--- |
@@ -158,15 +125,6 @@ digital-heroes/
 │   ├── stripe.ts
 │   ├── validation.ts
 │   └── utils.ts
-├── image/
-│   ├── img1.png
-│   ├── img2.png
-│   ├── img3.png
-│   ├── img4.png
-│   ├── img5.png
-│   ├── img6.png
-│   ├── img7.png
-│   └── img8.png
 ├── public/
 │   ├── favicon.svg
 │   └── site.webmanifest
